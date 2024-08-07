@@ -10,17 +10,19 @@ function isOdd(n) {
   console.log(result);
 
   function oddsSmallerThan(n) {
-    let oddSum = 0;
-    for(i=0;i<=n;i++){
+    let oddSum =0;
+    for(i=n;i>=0;i=i-1){
         if(i%2==1){
-            oddSum += i;
+            
+            oddSum = oddSum +1;
+
         }
-        return oddSum;
-    }
     
+    }
+    return oddSum-1;
   }
 
-  let result2 = oddSum(7);
+  let result2 = oddsSmallerThan(15);
   console.log(result2);
 
   function squareOrDouble(n) {
